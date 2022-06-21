@@ -25,9 +25,8 @@ P {
 }
 
 .painting {
-    padding: 20px;
+    padding: 10px;
     display: block;
-    background-position: center;
     border-radius: 30px;
 }
 

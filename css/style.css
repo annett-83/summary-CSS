@@ -25,8 +25,9 @@ P {
 }
 
 .painting {
-    margin: 10px 20px 60px 400px;
+    padding: 20px;
     display: block;
+    background-position: center;
     border-radius: 30px;
 }
 
@@ -67,7 +68,7 @@ a:link {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-template-rows: auto;
-    font-size: 20px;
+    font-size: 30px;
     font-family: initial;
 }
 

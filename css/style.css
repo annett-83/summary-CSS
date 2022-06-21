@@ -87,6 +87,9 @@ a:link {
 }
 
 .item-6 {
+    background-image: url('../img/painting.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
     background-color: rgb(177, 187, 237);
 }
 

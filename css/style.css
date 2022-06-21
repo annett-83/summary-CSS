@@ -24,14 +24,6 @@ P {
     padding: 10px;
 }
 
-.painting {
-    padding: 20px;
-    display: block;
-    background-position: center;
-    border-radius: 30px;
-}
-
-
 
 .logo {
     padding-block-start: 20px;
@@ -61,6 +53,8 @@ a:link {
 
 .work {
     background-image: url('../img/main.jmg.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
     background: 20%/center;
     border-radius: 10px;
     box-shadow: 0 0 10px #000;

@@ -1,0 +1,342 @@
+body {
+    padding: 5px;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+.block {
+    background-image: url('../img/main1.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 600px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #000;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: auto;
+
+}
+
+P {
+    text-align: center;
+    padding: 10px;
+}
+
+.painting {
+    padding: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30px;
+}
+
+
+
+.logo {
+    padding-block-start: 20px;
+    padding-left: 20px;
+    border-radius: 80px;
+}
+
+a:link {
+    font-size: 50px;
+    font-family: initial;
+}
+
+.nav {
+    color: rgb(133, 15, 15);
+    padding-left: 30px;
+    padding-top: 30px;
+    margin: 0 auto;
+}
+
+.profi {
+    display: flex;
+    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: auto;
+}
+
+.work {
+    background-image: url('../img/main.jmg.jpeg');
+    background: 20%/center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #000;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: auto;
+    font-size: 30px;
+    font-family: initial;
+}
+
+.item-1 {
+    background-color: rgb(249, 232, 232);
+}
+
+.item-2 {
+    background-color: rgb(203, 245, 217);
+}
+
+.item-3 {
+    background-color: rgb(240, 236, 247);
+}
+
+.item-4 {
+    background-color: rgb(242, 247, 206);
+}
+
+.item-5 {
+    background-color: rgb(244, 239, 243);
+}
+
+.item-6 {
+    background-color: rgb(177, 187, 237);
+}
+
+
+
+.work_time {
+    background: #e2f1f4;
+    background: -webkit-linear-gradient(top, #e2f1f4 0%, #ebd6f0 20%, #ebf2d8 100%);
+    border-radius: 10px;
+    box-shadow: 0 0 10px #000;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: auto;
+
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+    content: '';
+    position: absolute;
+    background-color: rgb(165, 56, 56);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+    padding: 5px;
+}
+
+/* Container around content */
+.container {
+    position: relative;
+    width: 50%;
+    height: 30%;
+}
+
+/* The circles on the timeline */
+.container::after {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    right: -18px;
+    background-color: white;
+    border: 4px solid #FF9F55;
+    top: 65px;
+    border-radius: 50%;
+    z-index: 1;
+
+}
+
+/* Place the container to the left */
+.left {
+    left: -1%;
+
+}
+
+/* Place the container to the right */
+.right {
+    left: 51%;
+}
+
+
+/* Fix the circle for containers on the right side */
+.right::after {
+    left: -14px;
+}
+
+/* The actual content */
+.content {
+    padding: 0px 10px;
+    background-color: rgb(250, 236, 236);
+    position: relative;
+    font-size: 25px;
+    border-radius: 6px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+
+    /* Place the timelime to the left */
+    .timeline::after {
+        left: 31px;
+    }
+
+    /* Full-width containers */
+    .container {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+
+    /* Make sure that all arrows are pointing leftwards */
+    .container::before {
+        left: 60px;
+        border: medium solid white;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent white transparent transparent;
+    }
+
+    /* Make sure all circles are at the same spot */
+    .left::after,
+    .right::after {
+        left: 150px;
+    }
+
+    /* Make all right containers behave like the left ones */
+    .right {
+        left: 0%;
+    }
+}
+
+article {
+    font-size: 30px;
+    font-family: initial;
+    line-height: 40px;
+    font-weight: 900;
+}
+
+h2a {
+    font-size: 50px;
+    font-family: initial;
+    font-family: sans;
+    color: rgb(20, 8, 87);
+    border: 5px solid #3c0448;
+    box-shadow: #18021a;
+    padding: 5px 100px;
+    margin: 0% 0% 0% 40%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #000;
+    background: #e2f1f4;
+    background: -webkit-linear-gradient(top, #e2f1f4 0%, #ebd6f0 50%, #ebf2d8 100%);
+}
+
+p2 {
+    font-size: 30px;
+    font-family: initial;
+    font-family: sans;
+    text-shadow: 1px 1px 5px #04AA6D;
+    letter-spacing: 10px;
+    color: rgb(43, 20, 113);
+    margin: 50% 50% 50% 50%;
+
+}
+
+span1,
+span2,
+span3,
+span4,
+span5 {
+    font-size: 30px;
+    font-family: initial;
+    font-family: sans;
+    text-transform: capitalize;
+    text-decoration: underline;
+
+}
+
+span1 {
+    color: #901209;
+}
+
+span2 {
+    color: #ffe712
+}
+
+span3 {
+    color: #0d088f
+}
+
+span4 {
+    color: #3c0448
+}
+
+span5 {
+    color: #5b0663;
+}
+
+span.box {
+    border-radius: 10px;
+    box-shadow: 0 0 10px #000;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: auto;
+
+}
+
+
+/* Container for skill bars */
+.line {
+    width: 100%;
+    /* Full width */
+    background-color: #ddd;
+    /* Grey background */
+
+}
+
+.skills {
+    text-align: right;
+    /* Right-align text */
+    padding-top: 10px;
+    /* Add top padding */
+    padding-bottom: 10px;
+    /* Add bottom padding */
+    color: white;
+    /* White text color */
+}
+
+.html {
+    width: 50%;
+    background-color: #303a36;
+}
+
+/* Green */
+.css {
+    width: 40%;
+    background-color: #2c363e;
+}
+
+/* Blue */
+.js {
+    width: 30%;
+    background-color: #504645;
+}
+
+/* Red */
+.py {
+    width: 30%;
+    background-color: #3f3f28;
+}
+
+/* Dark Grey */
+
+h3 {
+    color: #3c0448;
+    font-size: 40px;
+    font-family: sans;
+    font-style: oblique;
+}
